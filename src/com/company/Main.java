@@ -30,24 +30,13 @@ public class Main {
         }
         double answer = 0;
 
-        switch (operator){
-            case '+':
-                answer =  num1 + num2;
-                break;
-            case '-':
-                answer = num1 - num2;
-                break;
-            case '*':
-                answer = num1 * num2;
-                break;
-            case '/':
-                answer = num1 / num2;
-                break;
-            case '%':
-                answer = num1 % num2;
-                break;
-            default:
-                System.out.println("Invalid operator entered! ");
+        switch (operator) {
+            case '+' -> answer = num1 + num2;
+            case '-' -> answer = num1 - num2;
+            case '*' -> answer = num1 * num2;
+            case '/' -> answer = num1 / num2;
+            case '%' -> answer = num1 % num2;
+            default -> System.out.println("Invalid operator entered! ");
         }
 
         System.out.println("The answer is " + answer);
